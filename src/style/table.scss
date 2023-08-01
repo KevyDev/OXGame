@@ -1,0 +1,45 @@
+@import "colors";
+
+section.table-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    ul {
+        width: 20em;
+        height: 20em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        flex-wrap: wrap;
+        background: $background;
+        li {
+            width: 6em;
+            height: 6em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: $white;
+            span {
+                font-size: 4em;
+                font-weight: bold;
+                color: $background;
+                &.X {
+                    color: $red;
+                }
+                &.O {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

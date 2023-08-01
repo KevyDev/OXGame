@@ -1,0 +1,27 @@
+@import "colors";
+
+section.winner-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background: $winnerBg;
+    h1 {
+        font-size: 3em;
+        color: $gray;
+        span.X {
+            color: $red;
+        }
+        span.O {
+            color: $blue;
+        }
+    }
+}
