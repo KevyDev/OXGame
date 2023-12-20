@@ -14,6 +14,7 @@ section.winner-container {
     justify-content: center;
     z-index: 20;
     background: $winnerBg;
+    cursor: pointer;
     h1 {
         font-size: 3em;
         color: $gray;
